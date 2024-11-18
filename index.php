@@ -19,6 +19,7 @@ while ($task = $result->fetch_assoc()):
 ?>
         <tr><td><?php echo $task['taskname'];?> 
         </td>
+        <td><a class="edit" href="edit_task.php?id=<?php echo $task['id']; ?>">Edit</a></td>
         </tr>
         
 <?php endwhile; ?>
